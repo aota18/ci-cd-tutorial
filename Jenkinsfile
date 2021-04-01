@@ -22,12 +22,12 @@ pipeline {
             agent any
 
             steps {
-                echo "Let's start Long Journey ! 🙌  ENV : ${ENV}"
+                echo "Let's start Long Journey ! 🙌 "
                 echo "Clonning Repository..."
 
                 git url: "https://github.com/aota18/ci-cd-tutorial.git",
                     branch: 'master',
-                    credentialsId: 'jenkins-tok'
+                    credentialsId: 'git-test'
             }
 
 
