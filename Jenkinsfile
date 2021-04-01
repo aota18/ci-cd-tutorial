@@ -102,7 +102,7 @@ pipeline {
         stage('Test Backend'){
             agent {
                 docker {
-                    image 'node: latest'
+                    image 'node:latest'
                 }
             }
 
