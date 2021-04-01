@@ -126,7 +126,7 @@ pipeline {
 
                 dir ('./server') {
                     sh """
-                    docker build . -t server --build-arg 
+                    docker build . -t server 
                     """
                 }
             }
